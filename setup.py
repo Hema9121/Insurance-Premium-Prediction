@@ -5,7 +5,7 @@ from typing import List
 PROJECT_NAME="Insurance Premium Prediction"
 VERSION="0.0.1"
 AUTHOR="Hema Srinivasulu"
-DESRCIPTION="Insurance Premium Prediction Project"
+DESRCIPTION="Insurance Premium Prediction Project."
 
 REQUIREMENT_FILE_NAME="requirements.txt"
 
