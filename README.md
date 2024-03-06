@@ -26,12 +26,12 @@ Applying machine learing tasks like Data Exploration, Data Cleaning, Feature Eng
 
 
 ## Deployment Link :
-
+https://insurance-premium-prediction-fc36acae3e0f.herokuapp.com/
 
 ## Web Inerface :
-![alt text](<Screenshot 2024-03-05 110641.png>)
+![alt text](image.png)
 
-![alt text](<Screenshot 2024-03-05 110732.png>)
+![alt text](image-1.png)
 
 ## Libraries used :
     1) Pandas
