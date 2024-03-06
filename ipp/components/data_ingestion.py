@@ -1,7 +1,7 @@
 from ipp.entity.config_entity import DataIngestionConfig
 import sys,os
-import wget
-import zipfile
+#import wget
+#import zipfile
 from ipp.exception import InsuranceException
 from ipp.logger import logging
 from ipp.entity.artifact_entity import DataIngestionArtifact
@@ -37,7 +37,7 @@ class DataIngestion:
             tgz_file_path = os.path.join(tgz_download_dir, insurance_file_name)
 
             logging.info(f"Downloading file from :[{download_url}] into :[{tgz_file_path}]")
-            wget.download(download_url,out=tgz_file_path)
+            urllib.request.urlretrieve(download_url, tgz_file_path)
             #urllib.request.urlretrieve(download_url, tgz_file_path)
             logging.info(f"File :[{tgz_file_path}] has been downloaded successfully.")
             return tgz_file_path
@@ -55,7 +55,7 @@ class DataIngestion:
             os.makedirs(raw_data_dir,exist_ok=True)
 
             logging.info(f"Extracting tgz file: [{tgz_file_path}] into dir: [{raw_data_dir}]")
-            with zipfile.ZipFile(tgz_file_path) as insurance_tgz_file_obj:
+            with tarfile.open(tgz_file_path) as insurance_tgz_file_obj:
                 insurance_tgz_file_obj.extractall(path=raw_data_dir)
             logging.info(f"Extraction completed")
 

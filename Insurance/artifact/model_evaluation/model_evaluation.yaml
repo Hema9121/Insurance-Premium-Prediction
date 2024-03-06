@@ -1,2 +1,5 @@
 best_model:
-  model_path: C:\Users\dshem\OneDrive\Desktop\projects\project-2.1\Insurance-Premium-Prediction\Insurance\artifact\model_trainer\2024-03-05-20-44-29\trained_model\model.pkl
+  model_path: C:\Users\dshem\OneDrive\Desktop\projects\project-2.1\Insurance-Premium-Prediction\Insurance\artifact\model_trainer\2024-03-06-10-01-22\trained_model\model.pkl
+history:
+  2024-03-06-10-01-22:
+    model_path: C:\Users\dshem\OneDrive\Desktop\projects\project-2.1\Insurance-Premium-Prediction\Insurance\artifact\model_trainer\2024-03-05-20-44-29\trained_model\model.pkl
